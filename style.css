@@ -1,0 +1,107 @@
+:root {
+    --rosa-choque: #FF69B4; /* Hot Pink */
+    --preto-elegante: #333;
+    --fundo-claro: #FADDEB;
+    --fonte-principal: 'Playfair Display', serif;
+    --fonte-secundaria: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: var(--fundo-claro);
+    color: var(--preto-elegante);
+    font-family: var(--fonte-secundaria);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+main {
+    background-color: #fff;
+    border: 5px solid var(--rosa-choque);
+    border-radius: 15px;
+    padding: 30px;
+    max-width: 600px;
+    width: 100%;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-family: var(--fonte-principal);
+    color: var(--rosa-choque);
+    text-align: center;
+    margin-bottom: 5px;
+    font-size: 2.2em;
+    text-shadow: 1px 1px 2px #f0f0f0;
+}
+
+.subtitle {
+    text-align: center;
+    font-style: italic;
+    color: var(--preto-elegante);
+    margin-bottom: 25px;
+    font-weight: 700;
+}
+
+.passo {
+    display: none; /* Esconde todos os passos por padrão */
+    text-align: center;
+    padding: 10px 0;
+}
+
+.passo p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.passo.ativo {
+    display: block; /* Mostra apenas o passo ativo */
+}
+
+button {
+    background-color: var(--rosa-choque);
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    margin: 8px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+    width: 100%;
+    max-width: 350px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background-color: #FF1493; /* Deep Pink */
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+.final-sucesso {
+    color: green;
+    font-weight: bold;
+    font-size: 1.2em;
+    border: 2px solid green;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.final-falha {
+    color: red;
+    font-weight: bold;
+    font-size: 1.2em;
+    border: 2px solid red;
+    padding: 10px;
+    border-radius: 5px;
+}
